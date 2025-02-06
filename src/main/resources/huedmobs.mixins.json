@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.trashoflevillage.huedmobs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnimalEntityMixin",
+    "LivingEntityMixin",
+    "MobEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
