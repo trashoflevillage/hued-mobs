@@ -3,15 +3,15 @@
 	"id": "huedmobs",
 	"version": "${version}",
 	"name": "Hued Mobs",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Make every individual mob more diverse with a hue shift!",
 	"authors": [
-		"Me!"
+		"trashoflevillage"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/hued-mobs",
+		"sources": "https://github.com/trashoflevillage/hued-mobs"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/huedmobs/icon.png",
 	"environment": "*",
 	"entrypoints": {
