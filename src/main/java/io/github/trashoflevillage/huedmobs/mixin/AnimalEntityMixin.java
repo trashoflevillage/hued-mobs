@@ -15,10 +15,10 @@ public class AnimalEntityMixin {
     @Inject(method = "breed(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/passive/AnimalEntity;Lnet/minecraft/entity/passive/PassiveEntity;)V", at = @At("TAIL"))
     public void breed(ServerWorld world, AnimalEntity other, PassiveEntity baby, CallbackInfo ci) {
         LivingEntityMixinAccess babyAccess = (LivingEntityMixinAccess)baby;
-        ((LivingEntityMixinAccess) baby).setColorShift(
-                new Vector3f(
-
-                )
+        LivingEntityMixinAccess otherAccess = (LivingEntityMixinAccess)other;
+        LivingEntityMixinAccess thisAccess = (LivingEntityMixinAccess)this;
+        babyAccess.setColorShift(
+                thisAccess.getColorShift().mul(otherAccess.getColorShift()).div(2.0f)
         );
     }
 }
